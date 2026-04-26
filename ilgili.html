@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İlgi Alanlarım</title>
+  <link rel="stylesheet" href="css/ilgilistyles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">Kişisel Web Sitem</a>
+      <button class="nav-toggle" aria-label="Menüyü Aç/Kapat">☰</button>
+      <nav class="navbar">
+        <a href="index.html">Hakkımda</a>
+        <a href="ozg.html">Özgeçmiş</a>
+        <a href="sehir.html">Şehrim</a>
+        <a href="mirasimiz.html">Mirasımız</a>
+        <a href="ilgili.html">İlgi Alanlarım</a>
+        <a href="iletisimm.html">İletişim</a>
+        <a href="PHP/giris.php">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="intro-card">
+      <span class="badge">API Kullanımı</span>
+      <h1>Fotoğraf ve Görsel İlham</h1>
+      <p>
+        Fotoğraf ve görsel keşif ilgilerim arasındadır. Aşağıdaki butona bastığında
+        Picsum API üzerinden rastgele bir görsel yüklenir.
+      </p>
+      <button id="fetchButton">Yeni Fotoğraf Getir</button>
+      <p id="apiStatus" class="status-text">Henüz yeni bir görsel yüklenmedi.</p>
+    </section>
+
+    <section class="image-card">
+      <img id="image" src="https://picsum.photos/1200/700?random=1" alt="Rastgele Görsel">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="ilscript.js"></script>
+</body>
+</html>
